@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVC-PLUS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <button data-page="evc" class="active">EVC-PLUS</button>
+    <button data-page="age">Age</button>
+    <button data-page="stopwatch">Stopwatch</button>
+    <button data-page="testimonial">Testimonial</button>
+  </nav>
+
+  <main class="container">
+
+    <!-- 1. EVC-PLUS -->
+    <section id="evc" class="page active">
+      <header class="header">
+        <h1>EVC-PLUS</h1>
+        <h5>mobile money</h5>
+      </header>
+
+      <div class="balance-card">
+        <p>Available Balance</p>
+        <h2 id="balance">$2,000.00</h2>
+      </div>
+
+      <div class="card">
+        <h3>Send Money</h3>
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" placeholder="61xxxxxxx" />
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <label for="pin">PIN</label>
+        <input type="password" id="pin" placeholder="****" maxlength="4" />
+        <button id="sendBtn" class="btn">Send</button>
+        <p id="message" class="msg"></p>
+      </div>
+    </section>
+
+    <!-- 2. AGE -->
+    <section id="age" class="page">
+      <div class="card">
+        <h3>Age Calculator</h3>
+        <label for="birthDate">Taariikhda dhalashada</label>
+        <input type="date" id="birthDate" />
+        <button id="ageBtn" class="btn">Xisaabi</button>
+        <p id="ageResult" class="msg"></p>
+      </div>
+    </section>
+
+    <!-- 3. STOPWATCH -->
+    <section id="stopwatch" class="page">
+      <div class="card center">
+        <h3>Stopwatch</h3>
+        <h2 id="swTime" class="big">00:00:00.0</h2>
+        <button id="swStart" class="btn">Start</button>
+        <button id="sw Stop" class="btn">Stop</button>
+        <button id="swReset" class="btn">Reset</button>
+      </div>
+    </section>
+
+    <!-- 4. TESTIMONIAL -->
+    <section id="testimonial" class="page">
+      <div class="slider">
+        <button class="arrow" id="prev" aria-label="Previous">&#10094;</button>
+
+        <div class="viewport">
+          <div class="track" id="track">
+
+            <div class="slide">
+              <div class="t-box c1">
+                <h1>Testimonial</h1>
+                <p>This is a testimonial page</p>
+                <div class="t-card">
+                  <img src="../assets/e71780a7-e087-4dde-9a93-7ac94030a7d4.jpg" alt="Fahad Yousuf">
+                  <h2>Fahad Yousuf</h2>
+                  <h4>I am a web developer!</h4>
+                  <span>I want to share my experience with this product.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="t-box c2">
+                <h1>Testimonial</h1>
+                <p>This is a testimonial page</p>
+                <div class="t-card">
+                  <img src="../assets/WhatsApp Image 2026-10-11 at 14.21.28.jpeg" alt="Mohamud Abdikhalif">
+                  <h2>Mohamud Abdikhalif</h2>
+                  <h4>I am a web developer!</h4>
+                  <span>I want to share my experience with this product.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="t-box c3">
+                <h1>Testimonial</h1>
+                <p>This is a testimonial page</p>
+                <div class="t-card">
+                  <img src="/assets/e71780a7-e087-4dde-9a93-7ac94030a7d4.jpg" alt="Anwar Ahmad">
+                  <h2>anwar ahmad</h2>
+                  <h4>I am a web developer!</h4>
+                  <span>I want to share my experience with this product.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="t-box c4">
+                <h1>Testimonial</h1>
+                <p>This is a testimonial page</p>
+                <div class="t-card">
+                  <img src="../assets/e71780a7-e087-4dde-9a93-7ac94030a7d4.jpg " alt="Abdi Wali">
+                  <h2>abdi wali</h2>
+                  <h4>I am a web developer!</h4>
+                  <span>I want to share my experience with this product.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="arrow" id="next" aria-label="Next">&#10095;</button>
+      </div>
+
+      <div class="dots" id="dots"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
